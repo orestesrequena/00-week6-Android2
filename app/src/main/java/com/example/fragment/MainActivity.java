@@ -13,6 +13,9 @@ import android.support.v7.widget.Toolbar;
 import android.view.Menu;
 import android.view.MenuItem;
 
+import com.example.fragment.ui.meteo.MeteoFragment;
+import com.example.fragment.ui.temperature.TemperatureFragment;
+
 public class MainActivity extends AppCompatActivity
         implements NavigationView.OnNavigationItemSelectedListener {
 
@@ -52,6 +55,7 @@ public class MainActivity extends AppCompatActivity
             super.onBackPressed();
         }
     }
+
     //para ensenyar el menu de los tres puntitos
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
@@ -83,20 +87,15 @@ public class MainActivity extends AppCompatActivity
         // Handle navigation view item clicks here.
         int id = item.getItemId();
 
-        if (id == R.id.nav_camera) {
-            // Handle the camera action
-        } else if (id == R.id.nav_gallery) {
+        switch (id) {
+            case R.id.nav_temperature:
+                getSupportFragmentManager().beginTransaction().replace(R.id.containerFragment, new TemperatureFragment()).commit();
+                break;
+            case R.id.nav_meteo:
+                getSupportFragmentManager().beginTransaction().replace(R.id.containerFragment, MeteoFragment.newInstance("mat", "lopez")).commit();
 
-        } else if (id == R.id.nav_slideshow) {
-
-        } else if (id == R.id.nav_manage) {
-
-        } else if (id == R.id.nav_share) {
-
-        } else if (id == R.id.nav_send) {
-
+                break;
         }
-
         DrawerLayout drawer = (DrawerLayout) findViewById(R.id.drawer_layout);
         drawer.closeDrawer(GravityCompat.START);
         return true;
