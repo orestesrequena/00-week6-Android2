@@ -6,11 +6,11 @@
     <group android:checkableBehavior="single">
         <item
             android:id="@+id/nav_temperature"
-            android:icon="@drawable/ic_menu_manage"
+            android:icon="@drawable/ic_title_black_24dp"
             android:title="@string/main_nav_temperature" />
         <item
             android:id="@+id/nav_meteo"
-            android:icon="@drawable/ic_menu_slideshow"
+            android:icon="@drawable/ic_wb_cloudy_black_24dp"
             android:title="@string/main_nav_meteo" />
     </group>
 </menu>

@@ -67,7 +67,6 @@ public class MeteoFragment extends Fragment {
         //recuperation des vues
         textViewFirstName = view.findViewById(R.id.textViewFirstName);
         textViewLastName = view.findViewById(R.id.textViewLastName);
-
         return view;
     }
 
@@ -78,4 +77,8 @@ public class MeteoFragment extends Fragment {
         textViewFirstName.setText(mParam1);
         textViewLastName.setText(mParam2);
     }
+
+    //    api.openweathermap.org/data/2.5/weather?q={city name},{country code}
+
+
 }

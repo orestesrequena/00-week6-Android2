@@ -18,5 +18,14 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         tools:text="Nom" />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/meteo_title"
+        android:textAlignment="center"/>
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/meteo_search"/>
 
 </LinearLayout>

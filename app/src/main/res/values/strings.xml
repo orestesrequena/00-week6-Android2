@@ -15,4 +15,15 @@
 
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="temperature_title">Convertir Celsius en Fahrenheit</string>
+    <string name="temperature_hint_celsius">Entrez un Celsius</string>
+    <string name="temperature_hint_fahrenheit">Entrez un Fahrenheit</string>
+    <string name="temperature_unit_fahrenheit">°F</string>
+    <string name="temperature_unit_celsius">°C</string>
+    <string name="temperature_button_save">Sauvegarder</string>
+    <string name="meteo_title">La Meteo</string>
+    <string name="temperature_convert_text">%s °C\'est égal à %s°F"</string>
+    <string name="action_delete">Tout effacer</string>
+
+
 </resources>
