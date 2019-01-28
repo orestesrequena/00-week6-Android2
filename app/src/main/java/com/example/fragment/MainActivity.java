@@ -3,6 +3,7 @@ package com.example.fragment;
 import android.os.Bundle;
 import android.support.design.widget.FloatingActionButton;
 import android.support.design.widget.Snackbar;
+import android.support.v4.app.Fragment;
 import android.view.View;
 import android.support.design.widget.NavigationView;
 import android.support.v4.view.GravityCompat;
@@ -89,15 +90,19 @@ public class MainActivity extends AppCompatActivity
 
         switch (id) {
             case R.id.nav_temperature:
-                getSupportFragmentManager().beginTransaction().replace(R.id.containerFragment, new TemperatureFragment()).commit();
+                switchFragment(new TemperatureFragment());
                 break;
             case R.id.nav_meteo:
-                getSupportFragmentManager().beginTransaction().replace(R.id.containerFragment, MeteoFragment.newInstance("mat", "lopez")).commit();
-
+                switchFragment(MeteoFragment.newInstance("mat", "lopez"));
                 break;
         }
+
         DrawerLayout drawer = (DrawerLayout) findViewById(R.id.drawer_layout);
         drawer.closeDrawer(GravityCompat.START);
         return true;
+    }
+
+    private void switchFragment(Fragment fragment) {
+        getSupportFragmentManager().beginTransaction().replace(R.id.containerFragment, fragment).commit();
     }
 }
