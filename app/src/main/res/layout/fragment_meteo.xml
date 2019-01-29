@@ -1,31 +1,61 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:orientation="vertical"
-    android:padding="16dp"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:orientation="vertical"
     tools:context=".ui.meteo.MeteoFragment">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorLightGreen"
+        android:orientation="horizontal">
 
-    <!-- TODO: Update blank fragment layout -->
+        <EditText
+            android:id="@+id/meteo_search"
+            android:layout_width="0dp"
+            android:layout_height="36dp"
+            android:layout_marginLeft="16dp"
+            android:layout_marginTop="16dp"
+            android:layout_weight="1"
+            android:background="@color/colorWhite"
+            android:hint="@string/meteo_hint_city" />
+
+        <Button
+            android:id="@+id/meteo_button_submit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="16dp"
+            android:text="OK" />
+    </LinearLayout>
+
     <TextView
-        android:id="@+id/textViewFirstName"
+        android:id="@+id/meteo_idCity"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        tools:text="Prénom" />
+        android:layout_gravity="center"
+        android:layout_marginTop="10dp"
+        android:textSize="20sp"
+        tools:text="@string/meteo_city" />
+
     <TextView
-        android:id="@+id/textViewLastName"
+        android:id="@+id/meteo_idTemperature"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        tools:text="Nom" />
-    <TextView
-        android:layout_width="match_parent"
+        android:layout_gravity="center"
+        android:layout_marginTop="10dp"
+        android:textSize="16sp"
+        tools:text="@string/meteo_temperature" />
+
+    <ImageView
+        android:id="@+id/meteo_idImage"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="@string/meteo_title"
-        android:textAlignment="center"/>
-    <EditText
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:id="@+id/meteo_search"/>
+        android:layout_gravity="center"
+        android:layout_marginTop="10dp"
+        tools:src="@mipmap/ic_launcher" />
+
 
 </LinearLayout>
+
+

@@ -9,8 +9,8 @@
 
     <string name="navigation_drawer_open">Open navigation drawer</string>
     <string name="navigation_drawer_close">Close navigation drawer</string>
-    <string name="nav_header_title">Android Studio</string>
-    <string name="nav_header_subtitle">android.studio@android.com</string>
+    <string name="nav_header_title">Fragment App Aston Week 6 by Orestes</string>
+    <string name="nav_header_subtitle">Testing App</string>
     <string name="nav_header_desc">Navigation header</string>
 
     <!-- TODO: Remove or change this placeholder text -->
@@ -24,6 +24,12 @@
     <string name="meteo_title">La Meteo</string>
     <string name="temperature_convert_text">%s °C\'est égal à %s°F"</string>
     <string name="action_delete">Tout effacer</string>
+    <string name="ok">ok</string>
+    <string name="cancel">cancel</string>
+    <string name="meteo_city">City</string>
+    <string name="meteo_temperature">Temperature</string>
+    <string name="meteo_hint_city">Entrez une ville</string>
+    <string name="meteo_dialog_city_empty">Vous devez saisir une ville</string>
 
 
 </resources>
