@@ -1,4 +1,4 @@
-package com.example.fragment.ui.meteo;
+package com.example.fragment.ui.meteo.utils;
 
 import android.app.AlertDialog;
 import android.app.Dialog;

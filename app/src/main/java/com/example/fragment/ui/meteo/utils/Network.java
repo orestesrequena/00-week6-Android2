@@ -1,4 +1,4 @@
-package com.example.fragment.ui.meteo;
+package com.example.fragment.ui.meteo.utils;
 
 import android.content.Context;
 import android.net.ConnectivityManager;

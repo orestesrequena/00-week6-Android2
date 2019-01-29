@@ -30,6 +30,7 @@
     <string name="meteo_temperature">Temperature</string>
     <string name="meteo_hint_city">Entrez une ville</string>
     <string name="meteo_dialog_city_empty">Vous devez saisir une ville</string>
+    <string name="meteo_dialog_network">Vous devez être conecté</string>
 
 
 </resources>
